@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">Nhắc nhở uống thuốc</string>
+
+    <string name="open_sans_bold">open_sans_bold</string>
+    <string name="open_sans_regular">open_sans_regular</string>
+    <string name="open_sans_semi_bold">open_sans_semi_bold</string>
+    <string name="open_sans_italic">open_sans_italic</string>
+
+    <string name="warning_no">Bỏ qua</string>
+    <string name="warning_yes">Chấp nhận</string>
+    <string name="warning_ignore">Bỏ qua</string>
+    <string name="warning">Cảnh báo</string>
+    <string name="suggest">Đề nghị</string>
+    <string name="warning_title">Thiết bị của bạn không hỗ trợ công cụ Text to Speech cho ngôn ngữ này. Vui lòng cài đặt công cụ từ cửa hàng Google Play và thiết lập mặc định sau đó khởi động lại ứng dụng.</string>
+    <string name="set_default_engine_google">Thiết bị của bạn cần đặt công cụ Google Text to Speech làm mặc định</string>
+    <string name="not_support_speech_to_text">Hệ thống nhận dạng lời nói không có sẵn</string>
+    <string name="do_not_show_again">Không hiển thị lại nữa</string>
+
+    <!-- Ignore/Silence reasons -->
+    <string name="reason_silent"> Chế độ im lặng hoặc rung </string>
+    <string name="reason_call"> Cuộc gọi điện thoại đang hoạt động </string>
+    <string name="reason_screen_off"> Tắt màn hình </string>
+    <string name="reason_screen_on"> Bật màn hình </string>
+    <string name="reason_headset_off"> Tắt tai nghe </string>
+    <string name="reason_headset_on"> Bật tai nghe </string>
+    <string name="reason_suspended"> Ứng dụng bị tạm ngưng bởi widget </string>
+
+</resources>

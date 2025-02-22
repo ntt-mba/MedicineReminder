@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:background="@color/blue_1"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="8dp"
+        app:cardCornerRadius="15dp"
+        android:layout_width="match_parent"
+        app:cardElevation="5dp"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:padding="10dp"
+            android:layout_height="wrap_content">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="60dp"
+                app:cardElevation="0dp"
+                app:cardCornerRadius="30dp"
+                android:layout_margin="3dp"
+                app:cardBackgroundColor="#0D03E3FF"
+                android:layout_height="60dp">
+
+                <com.makeramen.roundedimageview.RoundedImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/iv_icon"
+                    android:layout_margin="8dp"
+                    android:scaleType="centerCrop"
+                    app:riv_oval="true"
+                    android:src="@drawable/img_medicine"/>
+            </androidx.cardview.widget.CardView>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_marginLeft="5dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp">
+
+                <com.dab.medireminder.customview.UITextViewCustom
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:ellipsize="end"
+                    android:maxLines="2"
+                    android:text="Amoxicillin"
+                    android:id="@+id/tv_name"
+                    android:textColor="@color/color_button"
+                    android:textSize="15sp"
+                    app:setStyleTextView="@string/open_sans_bold" />
+
+                <com.dab.medireminder.customview.UITextViewCustom
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:ellipsize="end"
+                    android:layout_below="@+id/tv_name"
+                    android:id="@+id/tv_dose"
+                    android:maxLines="1"
+                    android:text="1 pill"
+                    android:textColor="@color/color_subtitle"
+                    android:textSize="12sp"
+                    app:setStyleTextView="@string/open_sans_bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_below="@+id/tv_dose"
+                    android:layout_marginTop="16dp"
+                    android:gravity="center_vertical"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:padding="3dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/ic_hour"/>
+
+                   <LinearLayout
+                       android:layout_width="match_parent"
+                       android:layout_marginLeft="5dp"
+                       android:orientation="vertical"
+                       android:layout_height="wrap_content">
+
+                       <com.dab.medireminder.customview.UITextViewCustom
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:ellipsize="end"
+                           android:id="@+id/tv_time"
+                           android:text="Hàng ngày"
+                           android:maxLines="1"
+                           android:textColor="@color/color_button"
+                           android:textSize="12sp"
+                           app:setStyleTextView="@string/open_sans_bold" />
+
+                       <com.dab.medireminder.customview.UITextViewCustom
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:ellipsize="end"
+                           android:id="@+id/tv_time_hour"
+                           android:text="9:00"
+                           android:maxLines="1"
+                           android:textColor="@color/blue_1"
+                           android:textSize="12sp"
+                           app:setStyleTextView="@string/open_sans_regular" />
+                   </LinearLayout>
+                </LinearLayout>
+            </RelativeLayout>
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:id="@+id/btn_delete"
+                android:padding="5dp"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_rubbish_bin"/>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

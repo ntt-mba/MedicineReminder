@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="120dp"
+        app:cardElevation="0dp"
+        app:cardCornerRadius="60dp"
+        android:layout_margin="8dp"
+        android:id="@+id/btn_add"
+        android:visibility="gone"
+        app:cardBackgroundColor="#0D03E3FF"
+        android:layout_height="120dp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:src="@drawable/icon_add_image" />
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="120dp"
+        app:cardElevation="0dp"
+        app:cardCornerRadius="10dp"
+        android:id="@+id/btn_image"
+        android:layout_margin="8dp"
+        app:cardBackgroundColor="#0D03E3FF"
+        android:layout_height="120dp">
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="1dp"
+            android:id="@+id/iv_image"
+            app:riv_corner_radius="10dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/icon_add_image" />
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>
